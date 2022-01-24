@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Noted</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1 class="text">NOTED</h1>
+            <div id="div-one">
+                    <br>
+                    <input placeholder="ENTER NOTE TITLE" class="input" type="text" id="user_note_title">
+                    <br>
+                    <textarea placeholder="ENTER NOTE" class="input" type="text" id="user_note"></textarea>
+                    <br>
+                    <button class="glyphicon glyphicon-check btn btn-success" onclick="save()">SAVE</button>
+                </div>
+                <br><button class="btn btn-warning" onclick="get_note()">GET NOTE</button><br><br>
+                <div id="div-two">
+                    <h3 id="note_head"></h3>
+                    <p id="notes"></p>
+                </div>
+        </center>   
+    </body>
+</html>
